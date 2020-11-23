@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Интернет-магазин</title>
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="./data/fontawesome-all.css">
+
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper__content">
+            <header class="header">
+                <div class="container box-flex">
+                    <div class="logo">
+                        <a  class="logo-link">
+                            <img class="logo-img" src="/img/logo.png">
+                        </a>
+                    </div>
+
+                    <form class="form"  method="post">
+                        <div class="form__button-wrapper">
+                            <button class="form__dropdown-button" type="button">Просмoтреть<i class="fas fa-caret-down form__caret-down"></i></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-menu-link">Актуальное</a>
+                                <ul class="dropdown-list dropdown-list--bottom">
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Свежие торты и пирожные</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Замороженные изделия</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Свежий хлеб и булочки</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Выпечка сдобная</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Торты упакованные</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Слоённые изделия</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Хлебцы</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Сопутствующие товары</a></li>
+                                       
+                                </ul>
+                                
+                            </div>
+                        </div>
+                        <input class="form__input" type="search" name="search" placeholder="Поиск предмета ...">
+                        <button class="form__search-button" type="submit">🔍</button>
+                    </form>
+
+                    <div class="user-account">
+
+                        <div class="user-account__wrapper user-account__wrapper--hover">
+                            <a class="user-account__basket-link"><img class="user-account__basket-img"  height="40" src="https://cdn.pixabay.com/photo/2014/05/21/13/25/shopping-cart-349544_960_720.png" alt="Корзина"></a>
+
+                            <div class="user-account__box">
+                                <div class="dropdown-menu dropdown-menu--basket-icon">
+                                    <div class="product">
+                                        <div class="product__img">
+                                            <img src="/img/keks.jpg" alt="Товар">
+                                        </div>
+                                        <div class="product__about">
+                                            <p class="product__title">Кекс</p>
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half"></i>
+                                            </div>
+                                        <p class="product__price">1 x Ђ0</p>
+                                        </div>
+                                        <a class="product__icon-link"><i class="fas fa-times-circle"></i></a>
+                                    </div>
+                                    <div class="product">
+                                            <div class="product__img">
+                                                <img src="/img/croissant.png" alt="Товар">
+                                            </div>
+                                            <div class="product__about">
+                                                <p class="product__title">Круассан</p>
+                                                <div class="product__rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half"></i>
+                                                </div>
+                                            <p class="product__price">1 x Ђ0</p>
+                                            </div>
+                                            <a class="product__icon-link"><i class="fas fa-times-circle"></i></a>
+                                        </div>
+                                    <div class="product">
+                                        <div class="product__img">
+                                            <img src="/img/tort.jpg" alt="Товар">
+                                        </div>
+                                        <div class="product__about">
+                                            <p class="product__title">Торт</p>
+                                            <div class="product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half"></i>
+                                            </div>
+                                        <p class="product__price">1 x Ђ0</p>
+                                        </div>
+                                        <a class="product__icon-link"><i class="fas fa-times-circle"></i></a>
+                                    </div>
+                                    <div class="total">
+                                        <span>Всего</span>
+                                    <span>Ђ 0.00</span>
+                                    </div>
+                                    <a class="cart-link cart-link--color">Проверить</a>
+                                    <a class="cart-link">Перейти в корзину</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <button class="user-account__button" type="button">Мой аккаунт</button>
+                    </div>
+                </div>
+            </header>
+
+            <nav class="navbar">
+                    <div class="navbar-container">
+                        <div class="navbar-button">
+                            <button class="navbar-button__nav" type="button" >
+                                <span class="navbar-button__line"></span>
+                                <span class="navbar-button__line"></span>
+                                <span class="navbar-button__line"></span>
+                            </button>
+                        </div>
+                        <ul class="navbar-menu navbar-menu--flex" id="navbar-menu">
+                            <li class="navbar-menu__active">
+                                <span class="navbar-menu__link">Домашняя</span>
+                            </li>
+                          
+                           
+                            <li class="navbar-menu__item navbar-menu__item--hover">
+                                <a class="navbar-menu__link" >Категории</a>
+                                <div class="dropdown-menu dropdown-menu--navbar dropdown-menu--kids-after">
+                                    <div class="dropdown-wrapper">
+                                        <a href="#" class="dropdown-menu-link">Категории</a>
+                                        <ul class="dropdown-list dropdown-list--bottom">
+                                            <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Свежие торты и пирожные</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Замороженные изделия</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Свежий хлеб и булочки</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Выпечка сдобная</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Торты упакованные</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Слоённые изделия</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Хлебцы</a></li>
+                                        <li class="dropdown-list__item"><a class="dropdown-list__link" href="#">Сопутствующие товары</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="navbar-menu__item"><a class="navbar-menu__link" href="#">Каталог</a></li>
+                            <li class="navbar-menu__item"><a class="navbar-menu__link" href="#">Бренды</a></li>
+                            <li class="navbar-menu__item"><a class="navbar-menu__link" href="#">Оплата</a></li>
+                            <li class="navbar-menu__item"><a class="navbar-menu__link" href="#">Блог</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+            <section class="brand-box">
+                <div class="">
+                    <div class="brand">
+                        <h1 class="brand__title">
+                            <strong class="brand__strong"></strong>
+                            <span class="brand__span"> <span class="brand__span-color"></span></span>
+                        </h1>
+                    </div>
+                </div>
+            </section>
+
+            <section class="special">
+                <div class="container special--flex">
+                    <ul class="special-block">
+                        <li class="special-block__big">
+                            <a>
+                                <img src="/img/wibor.jpg">
+                                <h3 class="special-block__title">Большой выбор<strong class="special-block__strong"></strong></h3>
+                            </a>
+                        </li>
+
+                        <li class="special-block__small">
+                            <a>
+                                <img src="/img/с2.jpg">
+                                <h3 class="special-block__title">Каждый день новое</h3>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="special-block">
+                        <li class="special-block__big">
+                            <a>
+                                <img src="/img/apetit.JPG" alt="Кексы">
+                                <h3 class="special-block__title">Аппетитные цены</h3>
+                            </a>
+                        </li>
+
+                        <li class="special-block__small">
+                            <a>
+                                <img src="/img/wlove.jpg" alt="Роскошные модные аксессуары">
+                                <h3 class="special-block__title">Мы рады видеть вас</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="items">
+                <div class="container">
+                    <h2 class="items__title">Популярные товары</h2>
+                    <p class="items__text">Делайте покупки в зависимости от того, что мы представили на этой неделе</p>
+
+                    <div class="items-list">
+                        <figure class="items-list__item items-list__item--hover">
+                            <img class="items-list__img" src="https://im0-tub-ua.yandex.net/i?id=2bbb936c8e1c3de1281932b59e0d1dda&n=13" alt="Товар">
+
+                            <figcaption class="items-content">
+                                <h4 class="items-list__title">Маффин</h4>
+                                <div class="price-box">
+                                    <p class="items-list__price">Ђ 30.00</p>
+                                    <div class="product__rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half"></i>
+                                    </div>
+                                </div>
+                            </figcaption>
+
+                            <div class="items-list__bg-dark">
+                                <button class="items-list__button items-list__button--icon" type="button">Добавить
+                                </button>
+                            </div>
+                            <a class="items-list__link"  ></a>
+                        </figure>
+
+                        <figure class="items-list__item items-list__item--hover">
+                            <img class="items-list__img" src="https://pbs.twimg.com/media/DbbU3N-V4AAilvN.jpg" alt="Товар">
+
+                            <figcaption class="items-content">
+                                <h4 class="items-list__title">Слойка с вишней</h4>
+                                <div class="price-box">
+                                    <p class="items-list__price">Ђ 20.00</p>
+                                    <div class="product__rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half"></i>
+                                    </div>
+                                </div>
+                            </figcaption>
+
+                            <div class="items-list__bg-dark">
+                                <button class="items-list__button items-list__button--icon" type="button">Добавить
+                                    <!--<img class="items-list__icon" src="img/basket-icon22.svg" alt="Иконка">-->
+                                </button>
+                            </div>
+                            <a class="items-list__link"  ></a>
+                        </figure>
+
+                        <figure class="items-list__item items-list__item--hover">
+                            <img class="items-list__img" src="img/пироженое.jpg" alt="Товар">
+
+                            <figcaption class="items-content">
+                                <h4 class="items-list__title">Пироженое </h4>
+                                <div class="price-box">
+                                    <p class="items-list__price">Ђ 50.00</p>
+                                    <div class="product__rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half"></i>
+                                    </div>
+                                </div>
+                            </figcaption>
+
+                            <div class="items-list__bg-dark">
+                                <button class="items-list__button items-list__button--icon" type="button">Добавить
+                                    <!--<img class="items-list__icon" src="img/basket-icon22.svg" alt="Иконка">-->
+                                </button>
+                            </div>
+                            <a class="items-list__link"  ></a>
+                        </figure>
+
+                        <figure class="items-list__item items-list__item--hover">
+                            <img class="items-list__img" src="https://vitok.ua/home/catalog_products/item_3922/image/4e175d79-ce41-11e9-9e24-000c2974779c.jpg" alt="Товар">
+
+                            <figcaption class="items-content">
+                                <h4 class="items-list__title">Рулет с маком</h4>
+                                <div class="price-box">
+                                    <p class="items-list__price">Ђ 20.00</p>
+                                    <div class="product__rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half"></i>
+                                    </div>
+                                </div>
+                            </figcaption>
+
+                            <div class="items-list__bg-dark">
+                                <button class="items-list__button items-list__button--icon" type="button">Добавить
+                                    <!--<img class="items-list__icon" src="img/basket-icon22.svg" alt="Иконка">-->
+                                </button>
+                            </div>
+                            <a class="items-list__link"  ></a>
+                        </figure>
+
+                        <figure class="items-list__item items-list__item--hover">
+                            <img class="items-list__img" src="https://images.ru.prom.st/235456724_w640_h640_rulety-biskvitnye-tu.jpg" alt="Товар">
+
+                            <figcaption class="items-content">
+                                <h4 class="items-list__title">Рулет со сгущёнкой</h4>
+                                <div class="price-box">
+                                    <p class="items-list__price">Ђ 25.00</p>
+                                    <div class="product__rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half"></i>
+                                    </div>
+                                </div>
+                            </figcaption>
+
+                            <div class="items-list__bg-dark">
+                                <button class="items-list__button items-list__button--icon" type="button">Добавить
+                                    <!--<img class="items-list__icon" src="img/basket-icon22.svg" alt="Иконка">-->
+                                </button>
+                            </div>
+                            <a class="items-list__link"  ></a>
+                        </figure>
+
+                        <figure class="items-list__item items-list__item--hover">
+                            <img class="items-list__img" src="https://i.pinimg.com/originals/e1/a4/50/e1a45088edee459355030d0a18c58cf3.png" alt="Товар">
+
+                            <figcaption class="items-content">
+                                <h4 class="items-list__title">Торт "Наполеон"</h4>
+                                <div class="price-box">
+                                    <p class="items-list__price">Ђ 50.00</p>
+                                    <div class="product__rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half"></i>
+                                    </div>
+                                </div>
+                            </figcaption>
+
+                            <div class="items-list__bg-dark">
+                                <button class="items-list__button items-list__button--icon" type="button">Добавить
+                                    <!--<img class="items-list__icon" src="img/basket-icon22.svg" alt="Иконка">-->
+                                </button>
+                            </div>
+                            <a class="items-list__link"  ></a>
+                        </figure>
+
+                        <figure class="items-list__item items-list__item--hover">
+                            <img class="items-list__img" src="https://nerdheist.com/wp-content/uploads/2019/07/bigstock-a-pile-of-crispy-pretzels-on-w-49046639.jpg" alt="Товар">
+
+                            <figcaption class="items-content">
+                                <h4 class="items-list__title">Добавить</h4>
+                                <div class="price-box">
+                                    <p class="items-list__price">Ђ 00.00</p>
+                                    <div class="product__rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half"></i>
+                                    </div>
+                                </div>
+                            </figcaption>
+
+                            <div class="items-list__bg-dark">
+                                <button class="items-list__button items-list__button--icon" type="button">Добавить
+                                    <!--<img class="items-list__icon" src="img/basket-icon22.svg" alt="Иконка">-->
+                                </button>
+                            </div>
+                            <a class="items-list__link"  ></a>
+                        </figure>
+
+                        <figure class="items-list__item items-list__item--hover">
+                            <img class="items-list__img" src="https://s3.amazonaws.com/images.ecwid.com/images/15921064/960718986.jpg" alt="Товар">
+
+                            <figcaption class="items-content">
+                                <h4 class="items-list__title">Багет</h4>
+                                <div class="price-box">
+                                    <p class="items-list__price">Ђ 15.00</p>
+                                    <div class="product__rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half"></i>
+                                    </div>
+                                </div>
+                            </figcaption>
+
+                            <div class="items-list__bg-dark">
+                                <button class="items-list__button items-list__button--icon" type="button">Добавить
+                                    <!--<img class="items-list__icon" src="img/basket-icon22.svg" alt="Иконка">-->
+                                </button>
+                            </div>
+                            <a class="items-list__link"  ></a>
+                        </figure>
+                    </div>
+
+                    <button class="items__button" type="button">Просмотреть весь продукт<i class="fas fa-long-arrow-alt-right items__arrow-right"></i></button>
+                </div>
+            </section>
+
+            <section class="offer-section">
+                <div class="container">
+                    <div class="offer">
+                        <div class="offer__box">
+                            <h3 class="offer__box-title">10% <span class="offer__box-color">скидка</span><span class="offer__box-text">на сдобу</span></h3>
+                        </div>
+
+                        <div class="offer-list">
+                            <article class="offer-list__item">
+                                <div class="offer-list__icon offer-list__icon--car"></div>
+                                <div class="offer-list__content">
+                                    <h4 class="offer-list__title">Бесплатная доставка</h4>
+                                    <p class="offer-list__text">Доставка по всему миру.</p>
+                                </div>
+                            </article>
+
+                            <article class="offer-list__item">
+                                <div class="offer-list__icon offer-list__icon--percent"></div>
+                                <div class="offer-list__content">
+                                    <h4 class="offer-list__title">Продажи и скидки</h4>
+                                    <p class="offer-list__text">Доставка по всему миру.</p>
+                                </div>
+                            </article>
+
+                            <article class="offer-list__item">
+                                <div class="offer-list__icon offer-list__icon--quality"></div>
+                                <div class="offer-list__content">
+                                    <h4 class="offer-list__title">Большой асортимент</h4>
+                                    <p class="offer-list__text">Доставка по всему миру.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="slider-form">
+                <div class="container box-flex">
+                    <div class="slider-box">
+                        <div class="slider">
+                            <blockquote class="slide">
+                                <div class="slide__bg-img"></div>
+                                <div class="slide__content">
+                                    <p class="slide__text">“Мы стараемся сделать лучше”</p>
+                                    <cite class="slide__name">Анна Прокопьева<br></cite>
+                                </div>
+                            </blockquote>
+
+                           
+                        </div>
+
+                        <div class="toggles">
+                            <span class="slider__toggles slider__toggles--active"></span>
+                            <span class="slider__toggles"></span>
+                            <span class="slider__toggles"></span>
+                        </div>
+                    </div>
+
+                    <div class="subscribe">
+                        <h3 class="subscribe__title">Подписатся</h3>
+                        <p class="subscribe__text">Подписатся на рассылку</p>
+                        <form class="form-subscribe"   method="post">
+                            <input class="form-subscribe__input" type="email" placeholder="Введите email" required="">
+                            <button class="form-subscribe__button" type="submit">Подписатся</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <section class="info">
+                <div class="container box-flex">
+                    <div class="info-about">
+                        <div class="info-about__logo-box">
+                            <a class="logo-link info-about__logo">
+                                <img class="logo-img" src="/img/logo.png">
+                            </a>
+                        </div>
+                        <p class="info-about__text"> сервис доставки румяных и сладких лакомств от ваших любимых производителей, для которых качество, вкус и надежность ценится больше всего. 
+
+                            Весь ассортимент нашего магазина – это популярные и давно всеми любимые продукты. Они наполняют людей радостью общения, создают атмосферу заботы и праздника, тепла и уюта. 
+                            
+                            Здесь Вы найдете много разных новинок, которые невозможно увидеть ни в одном розничном магазине, и, конечно, продукты, которые вы любите с детства. </p>
+                        
+                    </div>
+
+                    <div class="info-nav">
+                        <h3 class="info-nav__title">Компании</h3>
+                        <nav>
+                            <ul class="info-list">
+                                <li class="info-list__item"><a class="info-list__link">Домашняя</a></li>
+                                <li class="info-list__item"><a class="info-list__link">Магазин</a></li>
+                                <li class="info-list__item"><a class="info-list__link">Информация</a></li>
+                                <li class="info-list__item"><a class="info-list__link">Что то новое</a></li>
+                                <li class="info-list__item"><a class="info-list__link">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="info-nav info-nav--margin">
+                        <h3 class="info-nav__title">Категории</h3>
+                        <nav>
+                            <ul class="info-list">
+                                <li class="info-list__item"><a class="info-list__link">Сдоба</a></li>
+                                <li class="info-list__item"><a class="info-list__link">Пироженые</a></li>
+                                <li class="info-list__item"><a class="info-list__link">Торты</a></li>
+                                <li class="info-list__item"><a class="info-list__link">Слоённые изделия</a></li>
+                                <li class="info-list__item"><a class="info-list__link">Сопутствующие товары</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="info-nav">
+                        <h3 class="info-nav__title">Категории</h3>
+                        <nav>
+                            <ul class="info-list">
+                                <li class="info-list__item"><a class="info-list__link">Сдоба</a></li>
+                                <li class="info-list__item"><a class="info-list__link">Пироженые</a></li>
+                                <li class="info-list__item"><a class="info-list__link">Торты</a></li>
+                                <li class="info-list__item"><a class="info-list__link">Слоённые изделия</a></li>
+                                <li class="info-list__item"><a class="info-list__link">Сопутствующие товары</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="footer">
+            <div class="container footer--flex">
+                <small class="copyright">2020</small>
+                
+            </div>
+        </footer>
+    </div>
+  
+
+
+</body></html>
